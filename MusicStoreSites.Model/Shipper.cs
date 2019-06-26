@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace MusicStoreSites.Model
 {
-    public class Genre:BaseEntity
+    public class Shipper:BaseEntity
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string CompanyName { get; set; }
+        public string Phone { get; set; }
 
-        public virtual List<Album> Albums { get; set; }
+
+        //Mapping
+        public virtual List<Order> Orders { get; set; }
 
     }
 }
