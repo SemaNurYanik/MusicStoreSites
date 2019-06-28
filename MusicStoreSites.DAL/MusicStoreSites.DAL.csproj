@@ -53,6 +53,9 @@
     <Compile Include="Abstract\IOrderDAL.cs" />
     <Compile Include="Abstract\IShipperDAL.cs" />
     <Compile Include="Abstract\IUserDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\AlbumRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\ArtistReposiitory.cs" />
+    <Compile Include="Concrete\EntityFramework\GenreRepository.cs" />
     <Compile Include="Concrete\EntityFramework\MusicStoreDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
