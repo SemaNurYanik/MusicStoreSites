@@ -57,6 +57,11 @@
     <Compile Include="Concrete\EntityFramework\ArtistReposiitory.cs" />
     <Compile Include="Concrete\EntityFramework\GenreRepository.cs" />
     <Compile Include="Concrete\EntityFramework\MusicStoreDbContext.cs" />
+    <Compile Include="Concrete\EntityFramework\MyStrategy.cs" />
+    <Compile Include="Concrete\EntityFramework\OrderDetailMapping.cs" />
+    <Compile Include="Concrete\EntityFramework\OrderRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\ShipperRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
