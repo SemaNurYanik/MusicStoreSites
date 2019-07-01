@@ -59,7 +59,10 @@
                 </div>
 
                 <div class="panel-footer">
-
+                    @if(ViewBag.Error != null)
+                    {
+                        <span>@ViewBag.Error</span>
+                    }
 
                 </div>
 

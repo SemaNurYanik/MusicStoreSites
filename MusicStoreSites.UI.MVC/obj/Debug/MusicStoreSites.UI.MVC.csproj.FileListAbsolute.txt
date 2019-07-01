@@ -89,3 +89,5 @@ C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\MusicStoreSites.UI.MVC.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\MusicStoreSites.UI.MVC.pdb
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\WebActivatorEx.dll
+C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\EntityFramework.SqlServer.xml
