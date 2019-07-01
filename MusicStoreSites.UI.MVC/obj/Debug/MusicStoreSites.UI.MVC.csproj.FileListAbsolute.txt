@@ -56,7 +56,6 @@ C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\MusicS
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\MusicStoreSites.Model.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Common.dll
-C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Common.WebHost.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Mvc.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\System.Web.Helpers.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\System.Web.Mvc.dll
@@ -73,7 +72,6 @@ C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\MusicS
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\MusicStoreSites.Model.pdb
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.xml
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Common.xml
-C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\Ninject.Web.Mvc.xml
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\System.Web.Razor.xml
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\System.Web.Webpages.xml
@@ -90,3 +88,4 @@ C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\MusicStoreSites.UI.MVC.csproj.CopyComplete
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\MusicStoreSites.UI.MVC.dll
 C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\obj\Debug\MusicStoreSites.UI.MVC.pdb
+C:\Users\Sema\Documents\GitHub\MusicStoreSites\MusicStoreSites.UI.MVC\bin\WebActivatorEx.dll

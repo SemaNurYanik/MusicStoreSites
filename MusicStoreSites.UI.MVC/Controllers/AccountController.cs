@@ -25,7 +25,7 @@ namespace MusicStoreSites.UI.MVC.Controllers
 
 
 
-        //NINJECT İLE DEVAM EDİLECEK!!!!!!!!!!
+     
         public ActionResult Index()
         {
             return View();
