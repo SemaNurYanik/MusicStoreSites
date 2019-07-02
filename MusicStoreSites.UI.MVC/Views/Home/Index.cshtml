@@ -13,19 +13,19 @@
                 <ul class="nav nav-tabs" id="showRoutineTab" role="tablist">
                     <!-- Single Nav Item -->
                     <li class="nav-item active">
-                        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
-                            Anasayfa
+                        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false" onclick="AlbumAc()">
+                            Albüm Türleri
                         </a>
                     </li>
                     <!-- Single Nav Item -->
                     <li class="nav-item">
-                        <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                        <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false" onclick="IndirimAc()">
                             İNDİRİMDEKİLER
                         </a>
                     </li>
                     <!-- Single Nav Item -->
                     <li class="nav-item">
-                        <a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+                        <a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false" onclick="SonBes()">
                             Son Eklenen 5 Albüm
                         </a>
                     </li>
@@ -34,33 +34,30 @@
         </div>
     </div>
 </section>
-
-@*<div class="tab-content">
-    <div id="#tab2" class="tab-pane fadeIn active">
-        <div class="col-lg-2" style="float:left">
-            <ul id="genreMenu" class="nav nav-pills ">
-                @Html.Action("_GenreMenu", "Home")
-            </ul>
-        </div>
-
-    </div>
-</div>*@
-<div class="col-lg-4">
-    <div class="single-music-chart style-2 d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms" id="#tab2">
-        <!-- Music Content -->
-        
-        <div class="music-content d-flex align-items-center" style="float:left">                  
-           
-            <div id="genreMenu">                
+<div class="container">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-4">
+                <div id="genreMenu">
                     @Html.Action("_GenreMenu", "Home")
-                               
+                </div>
             </div>
-        </div>       
+            <div id="albumList" class="col-lg-8">
+                @Html.Action("_GenreOfAlbums", "Home")
+            </div>
+            <div id="tab3" class="fadeIn" style="display:none;">
+                <div class="col-lg-8">
+                    @Html.Action("_GetDiscontinuedAlbums", "Home")
+                </div>
+            </div>
+            <div id="tab4" class="fadeIn" style="display:none;">
+                <div class="col-lg-8">
+                    @Html.Action("_LastFiveAlbums","Home")
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-
-
+</div> 
 
 @section scripts{
     <script>
@@ -78,9 +75,24 @@
                 }
             })
         }
-
+        function kapa() {
+            $("#albumList").css("display", "none", "position", "absolute")
+            $("#tab3").css("display", "none", "position", "absolute")
+            $("#tab4").css("display", "none", "position", "absolute")
+        }
+        function IndirimAc() {
+            kapa();
+            $("#tab3").css("display", "inline-block", "position", "relative")
+        }
+        function AlbumAc() {
+            kapa();
+            $("#albumList").css("display", "inline-block", "position", "relative")
+        }
+        function SonBes() {
+            kapa();
+            $("#tab4").css("display", "inline-block", "position", "relative");
+        }       
     </script>
-
 }
 
 

@@ -30,5 +30,31 @@ namespace MusicStoreSites.UI.MVC.Controllers
             return PartialView(genreService.GetAll());
         }
 
+        public ActionResult _GenreOfAlbums(int? id)
+        {
+            if (id != null)
+            {
+                return PartialView(albumService.GetAlbumsOfGenre(id.Value).ToList());
+            }
+            return PartialView(albumService.GetAll());
+        }
+
+        public ActionResult _GetDiscontinuedAlbums()
+        {
+            var indirimdekiUrunler = albumService.GetDiscontinuedAlbums().ToList();
+            if (indirimdekiUrunler.Count == 0)
+            {
+                ViewBag.Error = "İndirimde ürün bulunmamaktadır.";
+                return PartialView();
+            }
+            return PartialView(indirimdekiUrunler);
+        }
+
+
+        public ActionResult _LastFiveAlbums()
+        {
+            return PartialView(albumService.GetLastFiveAlbums());
+        }
+
     }
 }
