@@ -1,0 +1,14 @@
+﻿
+@model List<Genre>
+
+@foreach (Genre item in Model)
+{
+<div class="music-content">
+    <div id="menu_@item.ID" class="music-title ">
+        <a href="javascript:void(0)" onclick="GenreByAlbumList(@item.ID)">
+            @item.Name
+        </a>
+        <br />
+    </div>
+</div>
+}
