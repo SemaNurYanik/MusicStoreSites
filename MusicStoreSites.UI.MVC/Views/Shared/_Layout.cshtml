@@ -154,20 +154,12 @@
                                     </li>
                                     <li><a href="./events.html">Events</a></li>
                                     <li><a href="./blog.html">Blog</a></li>
-                                </ul>
-
-                                <!-- Share Icon -->
-                                <div class="social-share-icon">
-                                    <i class="social_share"></i>
-                                </div>
-
-                                <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal">
-                                    @Html.ActionLink("Login", "Account",new { @class="btn btn-primary"})
-                                    @* buraya link gelecek *@
-                                    <i class="fas fa-user fa-2x"></i>
-                                   
-                                </div>
+                                    <li>
+                                        <a href="@Url.Action("Login","Account")" class="btn btn-warning">
+                                            <i class="fas fa-user fa-2x"></i>
+                                        </a>
+                                    </li>
+                                </ul>                              
                             </div>
                             <!-- Nav End -->
                         </div>
