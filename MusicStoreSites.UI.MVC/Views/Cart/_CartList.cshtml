@@ -17,28 +17,26 @@
                 <td>@item.Name</td>
                 <td>@item.Price</td>
                 <td>
-                    <input type="number" id="txtAmount" value="@item.Amount" min="0" onchange="" />
-                    @* indexte js yazılacak *@
+                    <input type="number" id="txtAmount" value="@item.Amount" min="0" onchange="CartUpdate(this.value,@item.ID)" />                  
                 </td>
                 <td>@item.SubTotal</td>
                 <td>
-                    <a href="Javascript:void(0)" onclick="">Delete</a>
-                    @* indexte buraya js yazılacak  *@
+                    <a href="Javascript:void(0)" onclick="DeleteItemCart(@item.ID)">Delete</a>                   
                 </td>
             </tr>
         }
     </tbody>
     <tfoot>
         <tr>
-            <td>Total:</td>
+            <td colspan="4">Total:</td>
             <td>
                 @((Session["cart"] as MyCart).GetAllCartItem.Sum(x => x.SubTotal).ToString("C2"))
             </td>
         </tr>
         <tr>
             <td>
-                @*@Html.ActionLink("Sepeti Onayla",)*@
-                @* order ile ilgili controller yazılacak *@
+                @Html.ActionLink("Sepeti Onayla", "ConfirmCart", "Order",new {@class="btn btn-success"})
+               
             </td>
         </tr>
     </tfoot>

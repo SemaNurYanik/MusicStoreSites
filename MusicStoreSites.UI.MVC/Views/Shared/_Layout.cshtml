@@ -151,6 +151,10 @@
                                     <li><a href="./events.html">Events</a></li>
                                     <li><a href="./blog.html">Blog</a></li>
                                     <li>
+                                        @Html.Action("_CartButton","Cart")
+
+                                    </li>
+                                    <li>
                                         <a href="@Url.Action("Login","Account")" class="btn btn-warning">
                                             <i class="fas fa-user fa-2x"></i>
                                         </a>
